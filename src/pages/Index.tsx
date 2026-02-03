@@ -6,16 +6,15 @@ import HeroSection from '@/components/HeroSection';
 import ProposalSection from '@/components/ProposalSection';
 import CelebrationSection from '@/components/CelebrationSection';
 import DateInvitation from '@/components/DateInvitation';
+import GiftSection from '@/components/GiftSection';
 
 const Index = () => {
   const [accepted, setAccepted] = useState(false);
   
-  // Change this to your girlfriend's name! 💕
-  const herName = "My Love";
+  const herName = "Anshu Jii";
 
   const handleYesClick = () => {
     setAccepted(true);
-    // Scroll to celebration section
     setTimeout(() => {
       window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
     }, 500);
@@ -23,14 +22,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-romantic-gradient relative overflow-x-hidden">
-      {/* Background effects */}
       <FloatingHearts />
       <Sparkles />
       
-      {/* Confetti when accepted */}
       {accepted && <Confetti />}
       
-      {/* Main content */}
       <main className="relative z-10">
         <HeroSection name={herName} />
         
@@ -42,14 +38,14 @@ const Index = () => {
         {accepted && (
           <>
             <CelebrationSection />
+            <GiftSection />
             <DateInvitation />
           </>
         )}
       </main>
       
-      {/* Footer */}
       <footer className="relative z-10 text-center py-8 text-muted-foreground font-body">
-        <p className="text-sm">Made with 💕 just for you</p>
+        <p className="text-sm">Made with 💕 just for you, Anshu Jii</p>
       </footer>
     </div>
   );

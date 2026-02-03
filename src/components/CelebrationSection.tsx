@@ -36,7 +36,7 @@ const CelebrationSection = () => {
           transition={{ delay: 0.6, duration: 0.6 }}
           className="font-romantic text-3xl md:text-4xl text-primary mb-4"
         >
-          I knew it! 🥰
+          I knew it, Anshu Jii! 🥰
         </motion.p>
         
         <motion.p
